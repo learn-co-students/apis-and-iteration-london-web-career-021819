@@ -28,10 +28,12 @@ def get_movie_names_from_api(films)
   titles
 end
 
+
 def print_movies(titles)
   puts "This character appears in the following films:"
   titles.each_with_index {|name, index| puts "#{index+1}. #{name}"}
 end
+
 
 def show_character_movies(character)
   films = get_character_movies_from_api(character)
